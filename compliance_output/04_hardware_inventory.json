@@ -1,10 +1,10 @@
 [
     {
-        "collection_time": "2026-06-11T09:33:14.487961Z",
+        "collection_time": "2026-06-11T11:09:48.036786Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
-            "timestamp": "2026-06-11T09:33:14.487862Z",
+            "timestamp": "2026-06-11T11:09:48.036600Z",
             "command": "Get-CimInstance Win32_ComputerSystem | Select-Object Manufacturer,Model,Name | ConvertTo-Json",
             "return_code": 0,
             "stdout": {

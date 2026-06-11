@@ -1,10 +1,10 @@
 [
     {
-        "collection_time": "2026-06-11T09:33:09.581676Z",
+        "collection_time": "2026-06-11T11:09:45.212593Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
-            "timestamp": "2026-06-11T09:33:09.581347Z",
+            "timestamp": "2026-06-11T11:09:45.212382Z",
             "command": "Get-ItemProperty HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\* -ErrorAction SilentlyContinue | Select-Object DisplayName,DisplayVersion | ConvertTo-Json -Depth 2",
             "return_code": 0,
             "stdout": [
