@@ -1,0 +1,14 @@
+[
+    {
+        "collection_time": "2026-06-11T09:34:12.546900Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "timestamp": "2026-06-11T09:34:12.546810Z",
+            "command": "Get-MpThreatDetection -ErrorAction SilentlyContinue | Select-Object TimeDetected, ThreatName | ConvertTo-Json",
+            "return_code": 0,
+            "stdout": "",
+            "stderr": ""
+        }
+    }
+]

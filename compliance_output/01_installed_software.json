@@ -1,0 +1,299 @@
+[
+    {
+        "collection_time": "2026-06-11T09:33:09.581676Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "timestamp": "2026-06-11T09:33:09.581347Z",
+            "command": "Get-ItemProperty HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\* -ErrorAction SilentlyContinue | Select-Object DisplayName,DisplayVersion | ConvertTo-Json -Depth 2",
+            "return_code": 0,
+            "stdout": [
+                {
+                    "DisplayName": "7-Zip 25.01 (x64)",
+                    "DisplayVersion": "25.01"
+                },
+                {
+                    "DisplayName": "Android Studio",
+                    "DisplayVersion": "2025.2"
+                },
+                {
+                    "DisplayName": "Cisco Packet Tracer 9.0.0 64Bit",
+                    "DisplayVersion": "9.0.0.810"
+                },
+                {
+                    "DisplayName": null,
+                    "DisplayVersion": null
+                },
+                {
+                    "DisplayName": "Microsoft DirectX End-User Runtime",
+                    "DisplayVersion": "9.29.1974"
+                },
+                {
+                    "DisplayName": "Microsoft DirectX Managed Assemblies",
+                    "DisplayVersion": "1.1"
+                },
+                {
+                    "DisplayName": "Git",
+                    "DisplayVersion": "2.52.0"
+                },
+                {
+                    "DisplayName": "Intel(R) Graphics Software & Drivers",
+                    "DisplayVersion": "1.0.1084.5"
+                },
+                {
+                    "DisplayName": null,
+                    "DisplayVersion": null
+                },
+                {
+                    "DisplayName": null,
+                    "DisplayVersion": null
+                },
+                {
+                    "DisplayName": "Microsoft Office Professional Plus 2019 - en-us",
+                    "DisplayVersion": "16.0.10417.20132"
+                },
+                {
+                    "DisplayName": "Riot Vanguard",
+                    "DisplayVersion": null
+                },
+                {
+                    "DisplayName": null,
+                    "DisplayVersion": null
+                },
+                {
+                    "DisplayName": "Synaptics ClickPad Driver",
+                    "DisplayVersion": "19.5.10.75"
+                },
+                {
+                    "DisplayName": "VLC media player",
+                    "DisplayVersion": "3.0.21"
+                },
+                {
+                    "DisplayName": null,
+                    "DisplayVersion": null
+                },
+                {
+                    "DisplayName": "WinRAR 5.71 (64-bit)",
+                    "DisplayVersion": "5.71.0"
+                },
+                {
+                    "DisplayName": "Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664",
+                    "DisplayVersion": "12.0.40664"
+                },
+                {
+                    "DisplayName": "Core Temp 1.19.5",
+                    "DisplayVersion": "1.19.5"
+                },
+                {
+                    "DisplayName": "Windows Subsystem for Linux",
+                    "DisplayVersion": "2.7.3.0"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 pip Bootstrap (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219",
+                    "DisplayVersion": "10.0.40219"
+                },
+                {
+                    "DisplayName": "Microsoft Update Health Tools",
+                    "DisplayVersion": "3.74.0.0"
+                },
+                {
+                    "DisplayName": "Python 3.13.7 Add to Path (64-bit)",
+                    "DisplayVersion": "3.13.7150.0"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 Utility Scripts (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61135",
+                    "DisplayVersion": "11.0.61135"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 Documentation (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.44.35211",
+                    "DisplayVersion": "14.44.35211"
+                },
+                {
+                    "DisplayName": "MySQL Workbench 8.0 CE",
+                    "DisplayVersion": "8.0.43"
+                },
+                {
+                    "DisplayName": "MySQL Server 8.0",
+                    "DisplayVersion": "8.0.43"
+                },
+                {
+                    "DisplayName": "Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664",
+                    "DisplayVersion": "12.0.40664"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 Tcl/Tk Support (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.7523",
+                    "DisplayVersion": "9.0.30729.7523"
+                },
+                {
+                    "DisplayName": "Python 3.13.7 Test Suite (64-bit)",
+                    "DisplayVersion": "3.13.7150.0"
+                },
+                {
+                    "DisplayName": "Microsoft Visual Studio Installer",
+                    "DisplayVersion": "3.14.2086.54749"
+                },
+                {
+                    "DisplayName": "MySQL Shell",
+                    "DisplayVersion": "8.0.43"
+                },
+                {
+                    "DisplayName": "MySQL Router 8.0",
+                    "DisplayVersion": "8.0.43"
+                },
+                {
+                    "DisplayName": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.44.35211",
+                    "DisplayVersion": "14.44.35211"
+                },
+                {
+                    "DisplayName": "VMware Workstation",
+                    "DisplayVersion": "26.0.0"
+                },
+                {
+                    "DisplayName": "Office 16 Click-to-Run Licensing Component",
+                    "DisplayVersion": "16.0.10417.20132"
+                },
+                {
+                    "DisplayName": "Office 16 Click-to-Run Extensibility Component",
+                    "DisplayVersion": "16.0.10417.20132"
+                },
+                {
+                    "DisplayName": "Office 16 Click-to-Run Localization Component",
+                    "DisplayVersion": "16.0.10417.20132"
+                },
+                {
+                    "DisplayName": "Python 3.13.7 Development Libraries (64-bit)",
+                    "DisplayVersion": "3.13.7150.0"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 Standard Library (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "Python 3.13.7 Standard Library (64-bit)",
+                    "DisplayVersion": "3.13.7150.0"
+                },
+                {
+                    "DisplayName": "Python 3.13.7 Tcl/Tk Support (64-bit)",
+                    "DisplayVersion": "3.13.7150.0"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 Test Suite (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "Adobe Acrobat (64-bit)",
+                    "DisplayVersion": "26.001.21563"
+                },
+                {
+                    "DisplayName": "Microsoft Visual C++ 2005 Redistributable (x64)",
+                    "DisplayVersion": "8.0.61186"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 Core Interpreter (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "NVIDIA Ansel",
+                    "DisplayVersion": "7.1.774.783"
+                },
+                {
+                    "DisplayName": "NVIDIA Control Panel 472.19",
+                    "DisplayVersion": "472.19"
+                },
+                {
+                    "DisplayName": "NVIDIA Graphics Driver 472.19",
+                    "DisplayVersion": "472.19"
+                },
+                {
+                    "DisplayName": "NVIDIA Install Application",
+                    "DisplayVersion": "2.1002.357.0"
+                },
+                {
+                    "DisplayName": "NVIDIA Display MessageBus",
+                    "DisplayVersion": "472.19"
+                },
+                {
+                    "DisplayName": "NVIDIA Display Container",
+                    "DisplayVersion": "1.33"
+                },
+                {
+                    "DisplayName": "NVIDIA Display Container LS",
+                    "DisplayVersion": "1.33"
+                },
+                {
+                    "DisplayName": "NVIDIA Display Watchdog Plugin",
+                    "DisplayVersion": "1.33"
+                },
+                {
+                    "DisplayName": "NVIDIA Display Session Container",
+                    "DisplayVersion": "1.33"
+                },
+                {
+                    "DisplayName": "Update for x64-based Windows Systems (KB5001716)",
+                    "DisplayVersion": "8.94.0.0"
+                },
+                {
+                    "DisplayName": "Python 3.13.7 Core Interpreter (64-bit)",
+                    "DisplayVersion": "3.13.7150.0"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 Executables (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "Python 3.13.7 pip Bootstrap (64-bit)",
+                    "DisplayVersion": "3.13.7150.0"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 Add to Path (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "Python 3.11.9 Development Libraries (64-bit)",
+                    "DisplayVersion": "3.11.9150.0"
+                },
+                {
+                    "DisplayName": "Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61135",
+                    "DisplayVersion": "11.0.61135"
+                },
+                {
+                    "DisplayName": "Python 3.13.7 Documentation (64-bit)",
+                    "DisplayVersion": "3.13.7150.0"
+                },
+                {
+                    "DisplayName": "Node.js",
+                    "DisplayVersion": "22.18.0"
+                },
+                {
+                    "DisplayName": "Python 3.13.7 Executables (64-bit)",
+                    "DisplayVersion": "3.13.7150.0"
+                },
+                {
+                    "DisplayName": "Microsoft SQL Server 2019 LocalDB ",
+                    "DisplayVersion": "15.0.4382.1"
+                },
+                {
+                    "DisplayName": "Java(TM) SE Development Kit 24.0.1 (64-bit)",
+                    "DisplayVersion": "24.0.1.0"
+                }
+            ],
+            "stderr": ""
+        }
+    }
+]

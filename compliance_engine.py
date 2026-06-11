@@ -2,6 +2,8 @@ import json
 import time
 from rules import (
     RULES,
+    corr_01_software_services,          
+    corr_02_persistence_threat_intel,
     installed_software_check,
     hardware_inventory_check,
     windows_services_check,
@@ -23,6 +25,8 @@ from rules import (
 )
 
 CHECKS = {
+    "t10_corr_01": corr_01_software_services,        
+    "t10_corr_02": corr_02_persistence_threat_intel,
     "01_installed_software": installed_software_check,
     "04_hardware_inventory": hardware_inventory_check,
     "05_windows_services": windows_services_check,

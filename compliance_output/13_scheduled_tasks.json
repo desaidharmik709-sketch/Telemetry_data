@@ -1,0 +1,715 @@
+[
+    {
+        "collection_time": "2026-06-11T09:33:35.603711Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "timestamp": "2026-06-11T09:33:35.603258Z",
+            "command": "Get-ScheduledTask | Where-Object {$_.State -eq 'Ready'} | Select-Object TaskName,TaskPath,State | ConvertTo-Json -Depth 2",
+            "return_code": 0,
+            "stdout": [
+                {
+                    "TaskName": "Adobe Acrobat Update Task",
+                    "TaskPath": "\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "OneDrive Reporting Task-S-1-5-21-3612381400-2841176760-930540241-1001",
+                    "TaskPath": "\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "OneDrive Standalone Update Task-S-1-5-21-3612381400-2841176760-930540241-1001",
+                    "TaskPath": "\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "OneDrive Startup Task-S-1-5-21-3612381400-2841176760-930540241-1001",
+                    "TaskPath": "\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "OpenClaw Gateway",
+                    "TaskPath": "\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Opera scheduled Autoupdate 1762077045",
+                    "TaskPath": "\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "RunPlatformExperienceHelper_Daily",
+                    "TaskPath": "\\GoogleUserPEH\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "RunPlatformExperienceHelper_Metrics",
+                    "TaskPath": "\\GoogleUserPEH\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Office Automatic Updates 2.0",
+                    "TaskPath": "\\Microsoft\\Office\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Office ClickToRun Service Monitor",
+                    "TaskPath": "\\Microsoft\\Office\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "OfficeBackgroundTaskHandlerLogon",
+                    "TaskPath": "\\Microsoft\\Office\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "OfficeBackgroundTaskHandlerRegistration",
+                    "TaskPath": "\\Microsoft\\Office\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "OfficeTelemetryAgentFallBack2016",
+                    "TaskPath": "\\Microsoft\\Office\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "OfficeTelemetryAgentLogOn2016",
+                    "TaskPath": "\\Microsoft\\Office\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": ".NET Framework NGEN v4.0.30319",
+                    "TaskPath": "\\Microsoft\\Windows\\.NET Framework\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": ".NET Framework NGEN v4.0.30319 64",
+                    "TaskPath": "\\Microsoft\\Windows\\.NET Framework\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "AD RMS Rights Policy Template Management (Manual)",
+                    "TaskPath": "\\Microsoft\\Windows\\Active Directory Rights Management Services Client\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "MareBackup",
+                    "TaskPath": "\\Microsoft\\Windows\\Application Experience\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Microsoft Compatibility Appraiser",
+                    "TaskPath": "\\Microsoft\\Windows\\Application Experience\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "PcaPatchDbTask",
+                    "TaskPath": "\\Microsoft\\Windows\\Application Experience\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "PcaWallpaperAppDetect",
+                    "TaskPath": "\\Microsoft\\Windows\\Application Experience\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ProgramDataUpdater",
+                    "TaskPath": "\\Microsoft\\Windows\\Application Experience\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "StartupAppTask",
+                    "TaskPath": "\\Microsoft\\Windows\\Application Experience\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "appuriverifierdaily",
+                    "TaskPath": "\\Microsoft\\Windows\\ApplicationData\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "appuriverifierinstall",
+                    "TaskPath": "\\Microsoft\\Windows\\ApplicationData\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "CleanupTemporaryState",
+                    "TaskPath": "\\Microsoft\\Windows\\ApplicationData\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "DsSvcCleanup",
+                    "TaskPath": "\\Microsoft\\Windows\\ApplicationData\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Backup",
+                    "TaskPath": "\\Microsoft\\Windows\\AppListBackup\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "BackupNonMaintenance",
+                    "TaskPath": "\\Microsoft\\Windows\\AppListBackup\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Proxy",
+                    "TaskPath": "\\Microsoft\\Windows\\Autochk\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "BitLocker Encrypt All Drives",
+                    "TaskPath": "\\Microsoft\\Windows\\BitLocker\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "BitLocker MDM policy Refresh",
+                    "TaskPath": "\\Microsoft\\Windows\\BitLocker\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "UninstallDeviceTask",
+                    "TaskPath": "\\Microsoft\\Windows\\Bluetooth\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "BgTaskRegistrationMaintenanceTask",
+                    "TaskPath": "\\Microsoft\\Windows\\BrokerInfrastructure\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "UserTask",
+                    "TaskPath": "\\Microsoft\\Windows\\CertificateServicesClient\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "UserTask-Roam",
+                    "TaskPath": "\\Microsoft\\Windows\\CertificateServicesClient\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ProactiveScan",
+                    "TaskPath": "\\Microsoft\\Windows\\Chkdsk\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "SyspartRepair",
+                    "TaskPath": "\\Microsoft\\Windows\\Chkdsk\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ClipESUConsumer",
+                    "TaskPath": "\\Microsoft\\Windows\\Clip\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "CreateObjectTask",
+                    "TaskPath": "\\Microsoft\\Windows\\CloudExperienceHost\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Backup",
+                    "TaskPath": "\\Microsoft\\Windows\\CloudRestore\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "UnifiedConsentSyncTask",
+                    "TaskPath": "\\Microsoft\\Windows\\ConsentUX\\UnifiedConsent\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Consolidator",
+                    "TaskPath": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "UsbCeip",
+                    "TaskPath": "\\Microsoft\\Windows\\Customer Experience Improvement Program\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Data Integrity Check And Scan",
+                    "TaskPath": "\\Microsoft\\Windows\\Data Integrity Scan\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Data Integrity Scan",
+                    "TaskPath": "\\Microsoft\\Windows\\Data Integrity Scan\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Data Integrity Scan for Crash Recovery",
+                    "TaskPath": "\\Microsoft\\Windows\\Data Integrity Scan\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ScheduledDefrag",
+                    "TaskPath": "\\Microsoft\\Windows\\Defrag\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Device",
+                    "TaskPath": "\\Microsoft\\Windows\\Device Information\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Device User",
+                    "TaskPath": "\\Microsoft\\Windows\\Device Information\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "RecommendedTroubleshootingScanner",
+                    "TaskPath": "\\Microsoft\\Windows\\Diagnosis\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Scheduled",
+                    "TaskPath": "\\Microsoft\\Windows\\Diagnosis\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "DirectXDatabaseUpdater",
+                    "TaskPath": "\\Microsoft\\Windows\\DirectX\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "DXGIAdapterCache",
+                    "TaskPath": "\\Microsoft\\Windows\\DirectX\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "SilentCleanup",
+                    "TaskPath": "\\Microsoft\\Windows\\DiskCleanup\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Diagnostics",
+                    "TaskPath": "\\Microsoft\\Windows\\DiskFootprint\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "StorageSense",
+                    "TaskPath": "\\Microsoft\\Windows\\DiskFootprint\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "dusmtask",
+                    "TaskPath": "\\Microsoft\\Windows\\DUSM\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "EDP App Launch Task",
+                    "TaskPath": "\\Microsoft\\Windows\\EDP\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "EDP Auth Task",
+                    "TaskPath": "\\Microsoft\\Windows\\EDP\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "EDP Inaccessible Credentials Task",
+                    "TaskPath": "\\Microsoft\\Windows\\EDP\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "StorageCardEncryption Task",
+                    "TaskPath": "\\Microsoft\\Windows\\EDP\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ExploitGuard MDM policy Refresh",
+                    "TaskPath": "\\Microsoft\\Windows\\ExploitGuard\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "DmClient",
+                    "TaskPath": "\\Microsoft\\Windows\\Feedback\\Siuf\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "DmClientOnScenarioDownload",
+                    "TaskPath": "\\Microsoft\\Windows\\Feedback\\Siuf\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "File History (maintenance mode)",
+                    "TaskPath": "\\Microsoft\\Windows\\FileHistory\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ReconcileFeatures",
+                    "TaskPath": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "UsageDataFlushing",
+                    "TaskPath": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "UsageDataReporting",
+                    "TaskPath": "\\Microsoft\\Windows\\Flighting\\FeatureConfig\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "RefreshCache",
+                    "TaskPath": "\\Microsoft\\Windows\\Flighting\\OneSettings\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "LocalUserSyncDataAvailable",
+                    "TaskPath": "\\Microsoft\\Windows\\Input\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "MouseSyncDataAvailable",
+                    "TaskPath": "\\Microsoft\\Windows\\Input\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "PenSyncDataAvailable",
+                    "TaskPath": "\\Microsoft\\Windows\\Input\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "TouchpadSyncDataAvailable",
+                    "TaskPath": "\\Microsoft\\Windows\\Input\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ScanForUpdates",
+                    "TaskPath": "\\Microsoft\\Windows\\InstallService\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ScanForUpdatesAsUser",
+                    "TaskPath": "\\Microsoft\\Windows\\InstallService\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Synchronize Language Settings",
+                    "TaskPath": "\\Microsoft\\Windows\\International\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Installation",
+                    "TaskPath": "\\Microsoft\\Windows\\LanguageComponentsInstaller\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ReconcileLanguageResources",
+                    "TaskPath": "\\Microsoft\\Windows\\LanguageComponentsInstaller\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Notifications",
+                    "TaskPath": "\\Microsoft\\Windows\\Location\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "WindowsActionDialog",
+                    "TaskPath": "\\Microsoft\\Windows\\Location\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "WinSAT",
+                    "TaskPath": "\\Microsoft\\Windows\\Maintenance\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Cellular",
+                    "TaskPath": "\\Microsoft\\Windows\\Management\\Provisioning\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Logon",
+                    "TaskPath": "\\Microsoft\\Windows\\Management\\Provisioning\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "MapsToastTask",
+                    "TaskPath": "\\Microsoft\\Windows\\Maps\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ProcessMemoryDiagnosticEvents",
+                    "TaskPath": "\\Microsoft\\Windows\\MemoryDiagnostic\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "MNO Metadata Parser",
+                    "TaskPath": "\\Microsoft\\Windows\\Mobile Broadband Accounts\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Lpksetup",
+                    "TaskPath": "\\Microsoft\\Windows\\MUI\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "LPRemove",
+                    "TaskPath": "\\Microsoft\\Windows\\MUI\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Mcbuilder",
+                    "TaskPath": "\\Microsoft\\Windows\\MUI\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "GatherNetworkInfo",
+                    "TaskPath": "\\Microsoft\\Windows\\NetTrace\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "WiFiTask",
+                    "TaskPath": "\\Microsoft\\Windows\\NlaSvc\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Device Install Group Policy",
+                    "TaskPath": "\\Microsoft\\Windows\\Plug and Play\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Device Install Reboot Required",
+                    "TaskPath": "\\Microsoft\\Windows\\Plug and Play\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Sysprep Generalize Drivers",
+                    "TaskPath": "\\Microsoft\\Windows\\Plug and Play\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "AnalyzeSystem",
+                    "TaskPath": "\\Microsoft\\Windows\\Power Efficiency Diagnostics\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "EduPrintProv",
+                    "TaskPath": "\\Microsoft\\Windows\\Printing\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "PrinterCleanupTask",
+                    "TaskPath": "\\Microsoft\\Windows\\Printing\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "VerifyWinRE",
+                    "TaskPath": "\\Microsoft\\Windows\\RecoveryEnvironment\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "RegIdleBackup",
+                    "TaskPath": "\\Microsoft\\Windows\\Registry\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "StartComponentCleanup",
+                    "TaskPath": "\\Microsoft\\Windows\\Servicing\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "BackgroundUploadTask",
+                    "TaskPath": "\\Microsoft\\Windows\\SettingSync\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "CreateObjectTask",
+                    "TaskPath": "\\Microsoft\\Windows\\Shell\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "FamilySafetyMonitor",
+                    "TaskPath": "\\Microsoft\\Windows\\Shell\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "FamilySafetyRefreshTask",
+                    "TaskPath": "\\Microsoft\\Windows\\Shell\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "IndexerAutomaticMaintenance",
+                    "TaskPath": "\\Microsoft\\Windows\\Shell\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ThemesSyncedImageDownload",
+                    "TaskPath": "\\Microsoft\\Windows\\Shell\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "SvcTrigger",
+                    "TaskPath": "\\Microsoft\\Windows\\SoftwareProtectionPlatform\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "SpaceAgentTask",
+                    "TaskPath": "\\Microsoft\\Windows\\SpacePort\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "SpaceManagerTask",
+                    "TaskPath": "\\Microsoft\\Windows\\SpacePort\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "MaintenanceTasks",
+                    "TaskPath": "\\Microsoft\\Windows\\StateRepository\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Storage Tiers Management Initialization",
+                    "TaskPath": "\\Microsoft\\Windows\\Storage Tiers Management\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "EnableLicenseAcquisition",
+                    "TaskPath": "\\Microsoft\\Windows\\Subscription\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ResPriStaticDbSync",
+                    "TaskPath": "\\Microsoft\\Windows\\Sysmain\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "WsSwapAssessmentTask",
+                    "TaskPath": "\\Microsoft\\Windows\\Sysmain\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "SR",
+                    "TaskPath": "\\Microsoft\\Windows\\SystemRestore\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Interactive",
+                    "TaskPath": "\\Microsoft\\Windows\\Task Manager\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "MsCtfMonitor",
+                    "TaskPath": "\\Microsoft\\Windows\\TextServicesFramework\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "ForceSynchronizeTime",
+                    "TaskPath": "\\Microsoft\\Windows\\Time Synchronization\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "SynchronizeTime",
+                    "TaskPath": "\\Microsoft\\Windows\\Time Synchronization\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "SynchronizeTimeZone",
+                    "TaskPath": "\\Microsoft\\Windows\\Time Zone\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "UPnPHostConfig",
+                    "TaskPath": "\\Microsoft\\Windows\\UPnP\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Usb-Notifications",
+                    "TaskPath": "\\Microsoft\\Windows\\USB\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "WiFiTask",
+                    "TaskPath": "\\Microsoft\\Windows\\WCM\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Windows Defender Cache Maintenance",
+                    "TaskPath": "\\Microsoft\\Windows\\Windows Defender\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Windows Defender Cleanup",
+                    "TaskPath": "\\Microsoft\\Windows\\Windows Defender\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Windows Defender Scheduled Scan",
+                    "TaskPath": "\\Microsoft\\Windows\\Windows Defender\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Windows Defender Verification",
+                    "TaskPath": "\\Microsoft\\Windows\\Windows Defender\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "QueueReporting",
+                    "TaskPath": "\\Microsoft\\Windows\\Windows Error Reporting\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "BfeOnServiceStartTypeChange",
+                    "TaskPath": "\\Microsoft\\Windows\\Windows Filtering Platform\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "UpdateLibrary",
+                    "TaskPath": "\\Microsoft\\Windows\\Windows Media Sharing\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Calibration Loader",
+                    "TaskPath": "\\Microsoft\\Windows\\WindowsColorSystem\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Scheduled Start",
+                    "TaskPath": "\\Microsoft\\Windows\\WindowsUpdate\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "CDSSync",
+                    "TaskPath": "\\Microsoft\\Windows\\WlanSvc\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Work Folders Logon Synchronization",
+                    "TaskPath": "\\Microsoft\\Windows\\Work Folders\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Work Folders Maintenance Work",
+                    "TaskPath": "\\Microsoft\\Windows\\Work Folders\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "NotificationTask",
+                    "TaskPath": "\\Microsoft\\Windows\\WwanSvc\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "OobeDiscovery",
+                    "TaskPath": "\\Microsoft\\Windows\\WwanSvc\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "XblGameSaveTask",
+                    "TaskPath": "\\Microsoft\\XblGameSave\\",
+                    "State": 3
+                },
+                {
+                    "TaskName": "Start Camomile ?n logon",
+                    "TaskPath": "\\Outbyte\\Camomile\\",
+                    "State": 3
+                }
+            ],
+            "stderr": ""
+        }
+    }
+]

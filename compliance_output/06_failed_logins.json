@@ -1,0 +1,14 @@
+[
+    {
+        "collection_time": "2026-06-11T09:33:20.116346Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "timestamp": "2026-06-11T09:33:20.116251Z",
+            "command": "Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4625} -MaxEvents 15 -ErrorAction SilentlyContinue | Select-Object TimeCreated, Id | ConvertTo-Json",
+            "return_code": 1,
+            "stdout": "",
+            "stderr": "Get-WinEvent : The parameter is incorrect\nAt line:1 char:1\n+ Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4625} -MaxEven ...\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    + CategoryInfo          : NotSpecified: (:) [Get-WinEvent], EventLogException\n    + FullyQualifiedErrorId : System.Diagnostics.Eventing.Reader.EventLogException,Microsoft.PowerShell.Commands.GetWinEventCommand"
+        }
+    }
+]

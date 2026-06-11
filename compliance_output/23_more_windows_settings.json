@@ -1,0 +1,23 @@
+[
+    {
+        "collection_time": "2026-06-11T09:33:58.341645Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "uac_level": {
+                "timestamp": "2026-06-11T09:33:57.769353Z",
+                "command": "reg query \"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" /v ConsentPromptBehaviorAdmin",
+                "return_code": 0,
+                "stdout": "\nHKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\n    ConsentPromptBehaviorAdmin    REG_DWORD    0x5\n\n",
+                "stderr": ""
+            },
+            "security_options": {
+                "timestamp": "2026-06-11T09:33:58.341599Z",
+                "command": "reg query \"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" /v EnableLUA",
+                "return_code": 0,
+                "stdout": "\nHKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\n    EnableLUA    REG_DWORD    0x1\n\n",
+                "stderr": ""
+            }
+        }
+    }
+]

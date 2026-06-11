@@ -1,0 +1,17 @@
+[
+    {
+        "collection_time": "2026-06-11T09:33:47.478498Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "timestamp": "2026-06-11T09:33:47.478407Z",
+            "command": "Get-MpComputerStatus | Select-Object RealTimeProtectionEnabled, AntivirusEnabled | ConvertTo-Json",
+            "return_code": 0,
+            "stdout": {
+                "RealTimeProtectionEnabled": true,
+                "AntivirusEnabled": true
+            },
+            "stderr": ""
+        }
+    }
+]

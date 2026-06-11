@@ -1,0 +1,18 @@
+[
+    {
+        "collection_time": "2026-06-11T09:33:14.487961Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "timestamp": "2026-06-11T09:33:14.487862Z",
+            "command": "Get-CimInstance Win32_ComputerSystem | Select-Object Manufacturer,Model,Name | ConvertTo-Json",
+            "return_code": 0,
+            "stdout": {
+                "Manufacturer": "HP",
+                "Model": "HP Pavilion Notebook",
+                "Name": "DESKTOP-4F9IUDK"
+            },
+            "stderr": ""
+        }
+    }
+]

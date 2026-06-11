@@ -1,0 +1,14 @@
+[
+    {
+        "collection_time": "2026-06-11T09:33:49.905952Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "timestamp": "2026-06-11T09:33:49.905899Z",
+            "command": "auditpol /get /category:*",
+            "return_code": 1314,
+            "stdout": "",
+            "stderr": "Error 0x00000522 occurred:\n\nA required privilege is not held by the client.\n\n\n\n"
+        }
+    }
+]

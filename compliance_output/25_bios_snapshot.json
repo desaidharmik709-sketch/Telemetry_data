@@ -1,0 +1,17 @@
+[
+    {
+        "collection_time": "2026-06-11T09:34:07.441731Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "timestamp": "2026-06-11T09:34:07.441509Z",
+            "command": "Get-CimInstance Win32_BIOS | Select-Object Manufacturer, SMBIOSBIOSVersion | ConvertTo-Json",
+            "return_code": 0,
+            "stdout": {
+                "Manufacturer": "Insyde",
+                "SMBIOSBIOSVersion": "F.36"
+            },
+            "stderr": ""
+        }
+    }
+]

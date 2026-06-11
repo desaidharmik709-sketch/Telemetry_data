@@ -1,0 +1,53 @@
+[
+    {
+        "collection_time": "2026-06-11T09:33:42.083821Z",
+        "username": "Rahul",
+        "hostname": "DESKTOP-4F9IUDK",
+        "data": {
+            "users": {
+                "timestamp": "2026-06-11T09:33:40.203728Z",
+                "command": "Get-LocalUser | Select-Object Name,Enabled | ConvertTo-Json",
+                "return_code": 0,
+                "stdout": [
+                    {
+                        "Name": "Administrator",
+                        "Enabled": false
+                    },
+                    {
+                        "Name": "DefaultAccount",
+                        "Enabled": false
+                    },
+                    {
+                        "Name": "Guest",
+                        "Enabled": false
+                    },
+                    {
+                        "Name": "Rahul",
+                        "Enabled": true
+                    },
+                    {
+                        "Name": "WDAGUtilityAccount",
+                        "Enabled": false
+                    }
+                ],
+                "stderr": ""
+            },
+            "admins": {
+                "timestamp": "2026-06-11T09:33:42.083700Z",
+                "command": "Get-LocalGroupMember Administrators | Select-Object Name,ObjectClass | ConvertTo-Json",
+                "return_code": 0,
+                "stdout": [
+                    {
+                        "Name": "DESKTOP-4F9IUDK\\Administrator",
+                        "ObjectClass": "User"
+                    },
+                    {
+                        "Name": "DESKTOP-4F9IUDK\\Rahul",
+                        "ObjectClass": "User"
+                    }
+                ],
+                "stderr": ""
+            }
+        }
+    }
+]
