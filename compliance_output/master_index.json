@@ -1,12 +1,12 @@
 [
     {
-        "collection_time": "2026-06-11T09:34:13.583426Z",
+        "collection_time": "2026-06-11T11:10:38.233331Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
             "hostname": "DESKTOP-4F9IUDK",
             "username": "Rahul",
-            "collection_timestamp": "2026-06-11T09:33:03.837633Z",
+            "collection_timestamp": "2026-06-11T11:09:43.011753Z",
             "files": [
                 "01_installed_software.json",
                 "04_hardware_inventory.json",

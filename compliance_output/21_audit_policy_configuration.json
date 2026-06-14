@@ -1,10 +1,10 @@
 [
     {
-        "collection_time": "2026-06-11T09:33:49.905952Z",
+        "collection_time": "2026-06-11T11:10:18.018974Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
-            "timestamp": "2026-06-11T09:33:49.905899Z",
+            "timestamp": "2026-06-11T11:10:18.018915Z",
             "command": "auditpol /get /category:*",
             "return_code": 1314,
             "stdout": "",

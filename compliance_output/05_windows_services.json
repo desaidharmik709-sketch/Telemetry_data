@@ -1,10 +1,10 @@
 [
     {
-        "collection_time": "2026-06-11T09:33:15.915196Z",
+        "collection_time": "2026-06-11T11:09:50.826477Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
-            "timestamp": "2026-06-11T09:33:15.914870Z",
+            "timestamp": "2026-06-11T11:09:50.826120Z",
             "command": "Get-Service | Where-Object {$_.Status -eq 'Running'} | Select-Object Name,DisplayName,Status | ConvertTo-Json -Depth 2",
             "return_code": 0,
             "stdout": [
@@ -71,6 +71,11 @@
                 {
                     "Name": "camsvc",
                     "DisplayName": "Capability Access Manager Service",
+                    "Status": 4
+                },
+                {
+                    "Name": "CaptureService_8ed27",
+                    "DisplayName": "CaptureService_8ed27",
                     "Status": 4
                 },
                 {

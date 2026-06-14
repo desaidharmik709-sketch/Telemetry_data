@@ -1,18 +1,18 @@
 [
     {
-        "collection_time": "2026-06-11T09:33:27.714841Z",
+        "collection_time": "2026-06-11T11:10:02.349755Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
             "run": {
-                "timestamp": "2026-06-11T09:33:27.019503Z",
+                "timestamp": "2026-06-11T11:10:02.065179Z",
                 "command": "reg query \"HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\"",
                 "return_code": 0,
                 "stdout": "\nHKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\n    SecurityHealth    REG_EXPAND_SZ    %windir%\\system32\\SecurityHealthSystray.exe\n    Riot Vanguard    REG_SZ    \"C:\\Program Files\\Riot Vanguard\\vgtray.exe\"\n    (Default)    REG_SZ    \n    vmware-tray.exe    REG_SZ    \"C:\\Program Files\\VMware\\VMware Workstation\\vmware-tray.exe\"\n\n",
                 "stderr": ""
             },
             "runonce": {
-                "timestamp": "2026-06-11T09:33:27.714752Z",
+                "timestamp": "2026-06-11T11:10:02.349700Z",
                 "command": "reg query \"HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\"",
                 "return_code": 0,
                 "stdout": "\nHKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce\n    msedge_cleanup_{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}    REG_SZ    \"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\149.0.4022.52\\Installer\\setup.exe\" --msedgewebview --delete-old-versions --system-level --verbose-logging --on-logon\n    msedge_cleanup_{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}    REG_SZ    \"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\149.0.4022.62\\Installer\\setup.exe\" --msedge --channel=stable --delete-old-versions --system-level --verbose-logging --on-logon\n\n",

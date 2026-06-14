@@ -1,11 +1,11 @@
 [
     {
-        "collection_time": "2026-06-11T09:33:42.083821Z",
+        "collection_time": "2026-06-11T11:10:12.840394Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
             "users": {
-                "timestamp": "2026-06-11T09:33:40.203728Z",
+                "timestamp": "2026-06-11T11:10:11.024451Z",
                 "command": "Get-LocalUser | Select-Object Name,Enabled | ConvertTo-Json",
                 "return_code": 0,
                 "stdout": [
@@ -33,7 +33,7 @@
                 "stderr": ""
             },
             "admins": {
-                "timestamp": "2026-06-11T09:33:42.083700Z",
+                "timestamp": "2026-06-11T11:10:12.840246Z",
                 "command": "Get-LocalGroupMember Administrators | Select-Object Name,ObjectClass | ConvertTo-Json",
                 "return_code": 0,
                 "stdout": [

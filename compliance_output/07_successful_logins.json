@@ -1,10 +1,10 @@
 [
     {
-        "collection_time": "2026-06-11T09:33:22.842975Z",
+        "collection_time": "2026-06-11T11:10:00.402940Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
-            "timestamp": "2026-06-11T09:33:22.842679Z",
+            "timestamp": "2026-06-11T11:10:00.402858Z",
             "command": "Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4624} -MaxEvents 15 -ErrorAction SilentlyContinue | Select-Object TimeCreated, Id | ConvertTo-Json",
             "return_code": 1,
             "stdout": "",

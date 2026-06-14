@@ -30,20 +30,7 @@ def export_metric_to_json(metric_name, data_dict):
     with open(METRICS_FILE, "w", encoding="utf-8") as f:
         json.dump(current_data, f, indent=4)
 
-MOCK_CVE_DB = {
-    # Every Windows PC has Microsoft and Edge, guaranteeing high vulnerability correlation hits
-    "Microsoft": {"cve_count": 34, "critical": 5, "risk": "High"},
-    "Edge": {"cve_count": 12, "critical": 2, "risk": "Medium"},
-    "Google Chrome": {"cve_count": 14, "critical": 2, "risk": "High"},
-    "Windows": {"cve_count": 45, "critical": 8, "risk": "Critical"}
-}
 
-MOCK_THREAT_INTEL = {
-    # Every Windows PC has 'update' tasks. This will flag them as simulated malware for the demo.
-    "update": {"reputation": "Suspicious_Update_Hijack (Simulated)", "actor": "APT29"},
-    "onedrive": {"reputation": "Cloud_Exfiltration_Node (Simulated)", "actor": "FIN7"},
-    "powershell.exe": {"reputation": "Suspicious_LOLBin", "actor": "General_Malware"}
-}
 
 DATA_DIR = Path("compliance_output")
 
@@ -477,87 +464,10 @@ def usb_setting_history_check():
         "evidence": "USB registry checked"
     }
     
-def corr_01_software_services():
-    """Advanced Correlation 1: Software to Services Execution."""
-    sw_data = load_latest("01_installed_software")
-    sw_items = safe_parse_json(sw_data.get("stdout", ""))
-    
-    svc_data = load_latest("05_windows_services")
-    svc_items = safe_parse_json(svc_data.get("stdout", ""))
 
-    vulnerable_installed = []
-    for item in sw_items:
-        name = str(item.get("DisplayName", ""))
-        for mock_name, mock_data in MOCK_CVE_DB.items():
-            if name and mock_name.lower() in name.lower():
-                vulnerable_installed.append({"app_name": name, "cve_data": mock_data})
-
-    running_vulnerable_services = []
-    for svc in svc_items:
-        svc_name = str(svc.get("DisplayName", "")).lower()
-        for vul in vulnerable_installed:
-            app_keyword = vul["app_name"].split()[0].lower() 
-            if app_keyword in svc_name:
-                running_vulnerable_services.append(svc.get("DisplayName", ""))
-
-    export_metric_to_json("Software_to_Services_Correlation", {
-        "total_software_scanned": len(sw_items),
-        "total_services_scanned": len(svc_items),
-        "vulnerable_software_found": len(vulnerable_installed),
-        "vulnerable_services_actively_running": len(running_vulnerable_services),
-        "enriched_cve_data": vulnerable_installed
-    })
-
-    return {
-        "status": len(running_vulnerable_services) == 0,
-        "evidence": f"Found {len(vulnerable_installed)} vulnerable apps. {len(running_vulnerable_services)} running as active services. See JSON for details."
-    }
-
-def corr_02_persistence_threat_intel():
-    """Advanced Correlation 2: Persistence Mechanisms vs Threat Intel."""
-    tasks_data = load_latest("13_scheduled_tasks")
-    tasks_items = safe_parse_json(tasks_data.get("stdout", ""))
-    
-    auto_data = load_latest("12_registry_autoruns")
-    run_out = str(auto_data.get("run", {}).get("stdout", "")).lower()
-
-    flagged_persistence = []
-
-    for task in tasks_items:
-        path = str(task.get("TaskPath", "")).lower() + str(task.get("TaskName", "")).lower()
-        for key, intel in MOCK_THREAT_INTEL.items():
-            if key in path:
-                flagged_persistence.append({"type": "Scheduled Task", "match": key, "intel": intel})
-
-    for key, intel in MOCK_THREAT_INTEL.items():
-        if key in run_out:
-            flagged_persistence.append({"type": "Registry Autorun", "match": key, "intel": intel})
-
-    export_metric_to_json("Persistence_Threat_Intel_Correlation", {
-        "total_tasks_scanned": len(tasks_items),
-        "threat_intel_matches": len(flagged_persistence),
-        "malicious_persistence_mechanisms": flagged_persistence
-    })
-
-    return {
-        "status": len(flagged_persistence) == 0,
-        "evidence": f"Mapped persistence mechanisms. {len(flagged_persistence)} Threat Intel matches found. See JSON for details."
-    }
-    
     
 RULES = [
-    {
-        "id": "T10-CORR-01",
-        "framework": "SYSTEM",
-        "control": "Software to Service Vulnerability Mapping",
-        "datapoint": "t10_corr_01"
-    },
-    {
-        "id": "T10-CORR-02",
-        "framework": "SYSTEM",
-        "control": "Persistence Threat Intel Enrichment",
-        "datapoint": "t10_corr_02"
-    },
+    
     {
         "id": "DP-001",
         "framework": "SYSTEM",

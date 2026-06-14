@@ -1,0 +1,86 @@
+[
+    {
+        "timestamp": "2026-06-13T16:22:43.560048+00:00",
+        "alert_name": "Multi-Layer Persistence Overlap",
+        "severity": "HIGH",
+        "details": {
+            "Endpoint": "DESKTOP-DEV-01",
+            "Suspicious Items": "malicious_updater",
+            "Narrative": "A program is utilizing multi-layered persistence by registering as BOTH a Scheduled Task and a Registry Autorun. Highly indicative of malware."
+        }
+    },
+    {
+        "timestamp": "2026-06-13T16:22:43.517045+00:00",
+        "alert_name": "Software-to-Service Mapping",
+        "severity": "INFO",
+        "details": {
+            "Endpoint": "DESKTOP-DEV-01",
+            "Mapped Services Count": "1",
+            "Examples": "Google Chrome",
+            "Narrative": "System Context: Correlated installed applications that are actively running as background services."
+        }
+    },
+    {
+        "timestamp": "2026-06-13T16:17:29.704065+00:00",
+        "alert_name": "Multi-Layer Persistence Overlap",
+        "severity": "HIGH",
+        "details": {
+            "Endpoint": "DESKTOP-DEV-01",
+            "Suspicious Items": "malicious_updater",
+            "Narrative": "A program is utilizing multi-layered persistence by registering as BOTH a Scheduled Task and a Registry Autorun. Highly indicative of malware."
+        }
+    },
+    {
+        "timestamp": "2026-06-13T16:17:29.652433+00:00",
+        "alert_name": "Software-to-Service Mapping",
+        "severity": "INFO",
+        "details": {
+            "Endpoint": "DESKTOP-DEV-01",
+            "Mapped Services Count": "1",
+            "Examples": "Google Chrome",
+            "Narrative": "System Context: Correlated installed applications that are actively running as background services."
+        }
+    },
+    {
+        "timestamp": "2026-06-13T16:16:06.382432+00:00",
+        "alert_name": "Multi-Layer Persistence Overlap",
+        "severity": "HIGH",
+        "details": {
+            "Endpoint": "DESKTOP-DEV-01",
+            "Suspicious Items": "malicious_updater",
+            "Narrative": "A program is utilizing multi-layered persistence by registering as BOTH a Scheduled Task and a Registry Autorun. Highly indicative of malware."
+        }
+    },
+    {
+        "timestamp": "2026-06-13T16:16:06.084625+00:00",
+        "alert_name": "Software-to-Service Mapping",
+        "severity": "INFO",
+        "details": {
+            "Endpoint": "DESKTOP-DEV-01",
+            "Mapped Services Count": "1",
+            "Examples": "Google Chrome",
+            "Narrative": "System Context: Correlated installed applications that are actively running as background services."
+        }
+    },
+    {
+        "timestamp": "2026-06-13T15:56:14.352577+00:00",
+        "alert_name": "Multi-Layer Persistence Overlap",
+        "severity": "HIGH",
+        "details": {
+            "Endpoint": "DESKTOP-DEV-01",
+            "Suspicious Items": "malicious_updater",
+            "Narrative": "A program is utilizing multi-layered persistence by registering as BOTH a Scheduled Task and a Registry Autorun. Highly indicative of malware."
+        }
+    },
+    {
+        "timestamp": "2026-06-13T15:56:14.298575+00:00",
+        "alert_name": "Software-to-Service Mapping",
+        "severity": "INFO",
+        "details": {
+            "Endpoint": "DESKTOP-DEV-01",
+            "Mapped Services Count": "1",
+            "Examples": "Google Chrome",
+            "Narrative": "System Context: Correlated installed applications that are actively running as background services."
+        }
+    }
+]

@@ -1,10 +1,10 @@
 [
     {
-        "collection_time": "2026-06-11T09:33:35.603711Z",
+        "collection_time": "2026-06-11T11:10:08.584170Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
-            "timestamp": "2026-06-11T09:33:35.603258Z",
+            "timestamp": "2026-06-11T11:10:08.583519Z",
             "command": "Get-ScheduledTask | Where-Object {$_.State -eq 'Ready'} | Select-Object TaskName,TaskPath,State | ConvertTo-Json -Depth 2",
             "return_code": 0,
             "stdout": [
@@ -401,11 +401,6 @@
                 {
                     "TaskName": "ReconcileLanguageResources",
                     "TaskPath": "\\Microsoft\\Windows\\LanguageComponentsInstaller\\",
-                    "State": 3
-                },
-                {
-                    "TaskName": "Notifications",
-                    "TaskPath": "\\Microsoft\\Windows\\Location\\",
                     "State": 3
                 },
                 {

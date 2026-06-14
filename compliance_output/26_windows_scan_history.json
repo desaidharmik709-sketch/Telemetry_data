@@ -1,10 +1,10 @@
 [
     {
-        "collection_time": "2026-06-11T09:34:12.546900Z",
+        "collection_time": "2026-06-11T11:10:37.065613Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
-            "timestamp": "2026-06-11T09:34:12.546810Z",
+            "timestamp": "2026-06-11T11:10:37.065532Z",
             "command": "Get-MpThreatDetection -ErrorAction SilentlyContinue | Select-Object TimeDetected, ThreatName | ConvertTo-Json",
             "return_code": 0,
             "stdout": "",

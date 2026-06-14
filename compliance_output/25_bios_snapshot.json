@@ -1,10 +1,10 @@
 [
     {
-        "collection_time": "2026-06-11T09:34:07.441731Z",
+        "collection_time": "2026-06-11T11:10:30.767224Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
-            "timestamp": "2026-06-11T09:34:07.441509Z",
+            "timestamp": "2026-06-11T11:10:30.766987Z",
             "command": "Get-CimInstance Win32_BIOS | Select-Object Manufacturer, SMBIOSBIOSVersion | ConvertTo-Json",
             "return_code": 0,
             "stdout": {

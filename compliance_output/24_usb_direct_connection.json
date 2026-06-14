@@ -1,10 +1,10 @@
 [
     {
-        "collection_time": "2026-06-11T09:34:03.052292Z",
+        "collection_time": "2026-06-11T11:10:27.401146Z",
         "username": "Rahul",
         "hostname": "DESKTOP-4F9IUDK",
         "data": {
-            "timestamp": "2026-06-11T09:34:03.051742Z",
+            "timestamp": "2026-06-11T11:10:27.400441Z",
             "command": "Get-CimInstance Win32_USBControllerDevice | Select-Object Dependent, Antecedent | ConvertTo-Json",
             "return_code": 0,
             "stdout": [
@@ -191,6 +191,18 @@
                 {
                     "Dependent": {
                         "CimClass": "ROOT/cimv2:Win32_PnPEntity",
+                        "CimInstanceProperties": "Caption Description InstallDate Name Status Availability ConfigManagerErrorCode ConfigManagerUserConfig CreationClassName DeviceID = \"SWD\\MMDEVAPI\\{0.0.0.00000000}.{56AF58B2... ErrorCleared ErrorDescription LastErrorCode PNPDeviceID PowerManagementCapabilities PowerManagementSupported StatusInfo SystemCreationClassName SystemName ClassGuid CompatibleID HardwareID Manufacturer PNPClass Present Service",
+                        "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+                    },
+                    "Antecedent": {
+                        "CimClass": "ROOT/cimv2:Win32_USBController",
+                        "CimInstanceProperties": "Caption Description InstallDate Name Status Availability ConfigManagerErrorCode ConfigManagerUserConfig CreationClassName DeviceID = \"PCI\\VEN_8086&DEV_9D2F&SUBSYS_8216103C&R... ErrorCleared ErrorDescription LastErrorCode PNPDeviceID PowerManagementCapabilities PowerManagementSupported StatusInfo SystemCreationClassName SystemName MaxNumberControlled ProtocolSupported TimeOfLastReset Manufacturer",
+                        "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+                    }
+                },
+                {
+                    "Dependent": {
+                        "CimClass": "ROOT/cimv2:Win32_PnPEntity",
                         "CimInstanceProperties": "Caption Description InstallDate Name Status Availability ConfigManagerErrorCode ConfigManagerUserConfig CreationClassName DeviceID = \"BTHENUM\\{0000110C-0000-1000-8000-00805F... ErrorCleared ErrorDescription LastErrorCode PNPDeviceID PowerManagementCapabilities PowerManagementSupported StatusInfo SystemCreationClassName SystemName ClassGuid CompatibleID HardwareID Manufacturer PNPClass Present Service",
                         "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
                     },
@@ -324,6 +336,30 @@
                     "Dependent": {
                         "CimClass": "ROOT/cimv2:Win32_PnPEntity",
                         "CimInstanceProperties": "Caption Description InstallDate Name Status Availability ConfigManagerErrorCode ConfigManagerUserConfig CreationClassName DeviceID = \"BTHHFENUM\\BTHHFPAUDIO\\8&15725141&1&97\" ErrorCleared ErrorDescription LastErrorCode PNPDeviceID PowerManagementCapabilities PowerManagementSupported StatusInfo SystemCreationClassName SystemName ClassGuid CompatibleID HardwareID Manufacturer PNPClass Present Service",
+                        "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+                    },
+                    "Antecedent": {
+                        "CimClass": "ROOT/cimv2:Win32_USBController",
+                        "CimInstanceProperties": "Caption Description InstallDate Name Status Availability ConfigManagerErrorCode ConfigManagerUserConfig CreationClassName DeviceID = \"PCI\\VEN_8086&DEV_9D2F&SUBSYS_8216103C&R... ErrorCleared ErrorDescription LastErrorCode PNPDeviceID PowerManagementCapabilities PowerManagementSupported StatusInfo SystemCreationClassName SystemName MaxNumberControlled ProtocolSupported TimeOfLastReset Manufacturer",
+                        "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+                    }
+                },
+                {
+                    "Dependent": {
+                        "CimClass": "ROOT/cimv2:Win32_PnPEntity",
+                        "CimInstanceProperties": "Caption Description InstallDate Name Status Availability ConfigManagerErrorCode ConfigManagerUserConfig CreationClassName DeviceID = \"SWD\\MMDEVAPI\\{0.0.0.00000000}.{EC8386BC... ErrorCleared ErrorDescription LastErrorCode PNPDeviceID PowerManagementCapabilities PowerManagementSupported StatusInfo SystemCreationClassName SystemName ClassGuid CompatibleID HardwareID Manufacturer PNPClass Present Service",
+                        "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+                    },
+                    "Antecedent": {
+                        "CimClass": "ROOT/cimv2:Win32_USBController",
+                        "CimInstanceProperties": "Caption Description InstallDate Name Status Availability ConfigManagerErrorCode ConfigManagerUserConfig CreationClassName DeviceID = \"PCI\\VEN_8086&DEV_9D2F&SUBSYS_8216103C&R... ErrorCleared ErrorDescription LastErrorCode PNPDeviceID PowerManagementCapabilities PowerManagementSupported StatusInfo SystemCreationClassName SystemName MaxNumberControlled ProtocolSupported TimeOfLastReset Manufacturer",
+                        "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
+                    }
+                },
+                {
+                    "Dependent": {
+                        "CimClass": "ROOT/cimv2:Win32_PnPEntity",
+                        "CimInstanceProperties": "Caption Description InstallDate Name Status Availability ConfigManagerErrorCode ConfigManagerUserConfig CreationClassName DeviceID = \"SWD\\MMDEVAPI\\{0.0.1.00000000}.{4F579A7D... ErrorCleared ErrorDescription LastErrorCode PNPDeviceID PowerManagementCapabilities PowerManagementSupported StatusInfo SystemCreationClassName SystemName ClassGuid CompatibleID HardwareID Manufacturer PNPClass Present Service",
                         "CimSystemProperties": "Microsoft.Management.Infrastructure.CimSystemProperties"
                     },
                     "Antecedent": {
