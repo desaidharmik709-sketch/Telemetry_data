@@ -153,7 +153,6 @@ for file in sorted(OUTPUT_DIR.glob("*.json")):
                 producer.flush()
 
                 time.sleep(0.03)
-
     except Exception as e:
 
         print(
