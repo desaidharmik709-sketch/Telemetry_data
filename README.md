@@ -7,6 +7,8 @@ The Compliance & Configuration Module is a component of the Security Operations 
 The module performs compliance assessment across multiple system areas, including software inventory, hardware inventory, user accounts, login activity, Windows services, security configurations, USB activity, audit policies, and Windows Defender status.
 
 Collected data is processed through a rules engine and score engine to generate compliance scores and security findings.
+Data Points:-
+
 
 Features
 
