@@ -1033,7 +1033,7 @@ def write_static_html():
             if (!container) return;
             
             if (report && report.summary) {
-                const total = report.summary.total_controls || 0;
+                const total = report.summary.total_controls_evaluated || 0;
                 const passed = report.summary.passed || 0;
                 const failed = report.summary.failed || 0;
                 const errors = report.summary.errors || 0;
@@ -1178,13 +1178,11 @@ def write_static_html():
         }
 
         function getRuleForLog(log) {
-            if (!log) return null;
-            const fileNameKey = String(log.file_name || "").replace(".json", "");
-            const eventIdKey = String(log.event_id || "").replace("EVT_", "").toLowerCase();
-            
             for (let key in RULE_MAPPINGS) {
-                if (key === fileNameKey || key.toLowerCase() === eventIdKey || eventIdKey.includes(key.toLowerCase())) {
-                    return RULE_MAPPINGS[key];
+                if (log.file_name && log.file_name.includes(key)) {
+                    let rule = Object.assign({}, RULE_MAPPINGS[key]);
+                    rule.datapoint = key;
+                    return rule;
                 }
             }
             return null;
@@ -1215,11 +1213,17 @@ def write_static_html():
                 let statusClass = 'status-warning';
                 
                 if (window.latestReportData && window.latestReportData.findings) {
-                    const finding = window.latestReportData.findings.find(f => f.id === rule.id || f.control === rule.control);
-                    if (finding) {
-                        ruleStatus = finding.status;
-                        ruleEvidence = finding.evidence;
-                        statusClass = ruleStatus === 'PASS' ? 'status-pass' : (ruleStatus === 'FAIL' ? 'status-fail' : 'status-warning');
+                    const findings = window.latestReportData.findings.filter(f => f.datapoint === rule.datapoint);
+                    if (findings && findings.length > 0) {
+                        const failedFinding = findings.find(f => f.status === 'FAIL');
+                        if (failedFinding) {
+                            ruleStatus = 'FAIL';
+                            ruleEvidence = failedFinding.evidence;
+                        } else {
+                            ruleStatus = 'PASS';
+                            ruleEvidence = findings[0].evidence;
+                        }
+                        statusClass = ruleStatus === 'PASS' ? 'status-pass' : 'status-fail';
                     }
                 }
                 
@@ -1411,9 +1415,17 @@ def write_static_html():
             if (!container) return;
             
             let html = '';
-            const rulesList = [];
-            for (let key in RULE_MAPPINGS) {
-                rulesList.push(RULE_MAPPINGS[key]);
+            let rulesList = [];
+            
+            if (window.latestReportData && window.latestReportData.findings) {
+                rulesList = window.latestReportData.findings.map(f => ({
+                    id: f.control_id,
+                    framework: f.framework,
+                    control: f.control_description,
+                    desc: "Remediation: " + f.remediation,
+                    status: f.status,
+                    evidence: f.evidence
+                }));
             }
             
             rulesList.sort((a,b) => {
@@ -1424,26 +1436,16 @@ def write_static_html():
             let renderedCount = 0;
             
             rulesList.forEach(rule => {
-                if (filter !== 'ALL' && rule.framework !== filter) {
+                if (filter !== 'ALL' && !rule.framework.includes(filter)) {
                     return;
                 }
                 
                 renderedCount++;
                 
-                let status = 'MANUAL REVIEW';
-                let evidence = 'No active scan telemetry for this rule.';
-                let badgeClass = 'badge-manual-review';
-                let statusClass = 'status-warning';
-                
-                if (window.latestReportData && window.latestReportData.findings) {
-                    const finding = window.latestReportData.findings.find(f => f.id === rule.id || f.control === rule.control);
-                    if (finding) {
-                        status = finding.status;
-                        evidence = finding.evidence;
-                        badgeClass = `badge-${status.toLowerCase().replace(/\\s+/g, '-')}`;
-                        statusClass = status === 'PASS' ? 'status-pass' : (status === 'FAIL' ? 'status-fail' : 'status-warning');
-                    }
-                }
+                let status = rule.status;
+                let evidence = rule.evidence;
+                let badgeClass = `badge-${status.toLowerCase().replace(/\\s+/g, '-')}`;
+                let statusClass = status === 'PASS' ? 'status-pass' : (status === 'FAIL' ? 'status-fail' : 'status-warning');
                 
                 html += `
                     <div class="compliance-rule-card ${statusClass}" style="background: rgba(17, 24, 39, 0.4); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 12px; overflow: hidden; margin-bottom: 10px; transition: all 0.3s ease;">
